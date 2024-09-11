@@ -34,3 +34,9 @@ The core functionality is provided by the `minOperations` function, which calcul
 ```python
 def minOperations(n: int) -> int:
 ```
+
+## Usage
+
+```bash
+./0-main.py
+```
