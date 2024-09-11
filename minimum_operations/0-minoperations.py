@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def minOperations(n: int) -> int:
     # If n is less than or equal to 1, it's impossible to reach more than one 'H'
     if n <= 1:
