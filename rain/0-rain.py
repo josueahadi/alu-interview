@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 """create an algorithm for calculating the rain"""
 
+
 def rain(walls):
     """calculate how much water will be retained after it rains"""
     if not walls:
         return 0
-    
+
     left, right = 0, len(walls) - 1
     left_max = right_max = water = 0
-    
+
     while left < right:
         if walls[left] < walls[right]:
             if walls[left] >= left_max:
@@ -22,6 +23,5 @@ def rain(walls):
             else:
                 water += right_max - walls[right]
             right -= 1
-    
+
     return water
-    
